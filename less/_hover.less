@@ -1,0 +1,36 @@
+@media (min-width: 1028px) {
+    
+    /* Header */
+    
+    .header__name-category__item {
+        &:hover {
+            
+            .header__name-category__button {
+                color: #80B435;
+                
+                .icon-drop {
+                    transform: rotate(180deg);
+                }
+            }
+            
+            .header__category-block {
+                visibility: visible;
+                opacity: 1;
+                transition: visibility 0s 0s, opacity .4s .2s;
+                z-index: 2;
+            }
+        }
+    }
+    
+    /* / Header */
+    
+    /* Product */
+    
+    .product__item {
+        &:hover {
+            .product__add-to-cart {
+                opacity: 1;
+            }
+        }
+    }
+}
