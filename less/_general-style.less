@@ -69,8 +69,8 @@ body {
 }
 
 .container {
-    max-width: 1830px;
-    padding: 0px 15px;
+    max-width: 1840px;
+    padding: 0px 20px;
     margin: 0px auto;
 }
 
@@ -101,6 +101,7 @@ body {
 }
 
 .main-caption {
+    font-family: 'Oswald', sans-serif;
     color: #292929;
     font-weight: 500;
     font-size: 42px;
@@ -110,12 +111,14 @@ body {
 }
 
 .main-sub-caption {
+    font-family: 'Oswald', sans-serif;
     color: #ED6663;
     font-size: 24px;
     line-height: 36px;
     text-transform: uppercase;
     margin-top: 10px;
     text-align: center;
+    font-weight: 400;
 }
 
 .general-buttons {
@@ -134,6 +137,14 @@ body {
         background-color: #FFFFFF;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
         
+        .icon-arrow-left {
+            margin-left: -4px;
+        }
+        
+        .icon-arrow-right {
+            margin-right: -4px;
+        }
+        
         &:first-child {
             margin-right: 30px;
         }
@@ -145,17 +156,48 @@ body {
     justify-content: center;
     align-items: flex-end;
     position: absolute;
-    right: 0px;
+    right: 15px;
     bottom: 0px;
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: #4F4F4F;
+    transition: color .4s;
     
     .icon-more-arrow {
         margin-left: 12px;
         font-size: 19px;
+    }
+}
+
+.button-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: -50px;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity .4s, bottom .4s;
+    
+    &.show {
+        bottom: 60px;
+        opacity: 1;
+    }
+    
+    .to-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.4s, color 0.4s;
+    }
+    
+    .icon-to-top {
+        font-size: 8px;
     }
 }
 
