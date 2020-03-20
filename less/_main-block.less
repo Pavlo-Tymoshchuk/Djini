@@ -431,7 +431,7 @@
     }
 }
 
-.news-slider-list {
+.news-slider__list {
     height: 496px;
     position: relative;
     margin-right: -30px;
@@ -512,6 +512,10 @@
             height: 73px;
         }
     }
+    
+    .info {
+        display: none;
+    }
 }
 
 .icons-block__img {
@@ -581,6 +585,7 @@
 }
 .reviews__list {
     display: flex;
+    flex-wrap: wrap;
     margin-right: -30px;
 }
 
@@ -590,6 +595,14 @@
     
     .general__stars__item {
         font-size: 14px;
+    }
+    
+    .item__more {
+        display: none;
+        
+        &.show {
+            display: block;
+        }
     }
 }
 
@@ -611,6 +624,7 @@
     font-size: 14px;
     line-height: 130%;
     color: #575757;
+    font-weight: 400;
 }
 
 .reviews__header {
@@ -640,15 +654,18 @@
     color: #BDBDBD;
 }
 
+.reviews-slider__item {
+    .reviews__body {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 72px;
+    }
+}
+
 .reviews__body {
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     margin-bottom: 13px;
 }
 

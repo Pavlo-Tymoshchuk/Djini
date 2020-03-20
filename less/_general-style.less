@@ -14,6 +14,7 @@
 
 img {
     max-width: 100%;
+    max-height: 100%;
     vertical-align: top;
 }
 
@@ -43,6 +44,14 @@ button {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
 }
 
 html {
@@ -157,7 +166,7 @@ body {
     align-items: flex-end;
     position: absolute;
     right: 15px;
-    bottom: 0px;
+    bottom: 5px;
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;
@@ -198,6 +207,71 @@ body {
     
     .icon-to-top {
         font-size: 8px;
+    }
+}
+
+.general-calc {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 44px;
+    border: 1px solid #D3D3D3;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 0px 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    
+    button {
+        padding: 10px;
+    }
+}
+
+.calc-input {
+    border: none;
+    background: none;
+    width: 35px;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.breadcrumbs {
+    margin: 50px 0px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3D3D3D;
+}
+
+.breadcrumbs__item {
+    margin-right: 24px;
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 9px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -14px;
+        background: url(../img/icon-breadcrumbs.svg) center / contain no-repeat;
+    }
+    
+    &:last-child {
+        color: #949494;
+        pointer-events: none;
+        
+        &::before {
+            display: none;
+        }
     }
 }
 

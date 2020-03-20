@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 1080px) {
     
+    .footer__wrapper {
+        margin-bottom: 90px;
+    }
+    
     .footer__list {
         flex-wrap: wrap;
     }
@@ -19,5 +23,111 @@
     .footer-callback__list {
         display: flex;
         justify-content: space-between;
+    }
+    
+    .footer-callback__item {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__caption {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .footer-callback__list {
+        flex-direction: column;
+    }
+    
+    .footer-callback__item {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .footer__wrapper {
+        margin-bottom: 20px;
+    }
+    
+    .footer__list {
+        flex-direction: column;
+    }
+    
+    .footer__item {
+        width: 100%;
+        margin-bottom: 20px;
+        
+        &:nth-child(4) {
+            order: 4;
+            margin-bottom: 0px;
+        }
+        
+        &:nth-child(3) {
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .footer-drop__item {
+        transition: padding .2s;
+        
+        .footer__caption {
+            display: none;
+        }
+        
+        &.active {
+            padding-bottom: 20px;
+            transition: padding .4s;
+            
+            .footer-info__list {
+                max-height: 210px;
+                opacity: 1;
+                transition: opacity .4s, max-height .4s;
+            }
+            
+            .footer__button__text {
+                .icon-drop {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+    
+    .footer__button {
+        display: flex;
+        align-items: center;
+        color: #F1F1F1;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    .footer__button__text {
+        display: flex;
+        align-items: center;
+        
+        .text {
+            padding-right: 10px;
+        }
+        
+        .icon-drop {
+            font-size: 4px;
+            transition: transform .4s;
+        }
+    }
+    
+    .footer-info__list {
+        max-height: 0px;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity .2s, max-height .2s;
+    }
+    
+    .footer-drop__item {
+        border-bottom: 1px solid #373C49;
     }
 }

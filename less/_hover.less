@@ -87,6 +87,23 @@
         }
     }
     
+    .header__cart__delete {
+        &:hover {
+            color: #000000;
+        }
+    }
+    
+    .header__cart__link {
+        &:hover {
+            .header__cart {
+                visibility: visible;
+                opacity: 1;
+                transition: visibility 0s 0s, opacity .4s .2s;
+                z-index: 2;
+            }
+        }
+    }
+    
     /* / Header */
     
     /* Product */

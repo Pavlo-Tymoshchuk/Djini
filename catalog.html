@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djini</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <ul class="header__social__list">
+                <li class="header__social__item">
+                    <a href="#" class="header__socila__link">
+                        <span class="icon-fb"></span>
+                    </a>
+                </li>
+                <li class="header__social__item">
+                    <a href="#" class="header__socila__link">
+                        <span class="icon-teleg"></span>
+                    </a>
+                </li>
+                <li class="header__social__item">
+                    <a href="#" class="header__socila__link">
+                        <span class="icon-inst"></span>
+                    </a>
+                </li>
+            </ul>
+            <nav class="header__nav">
+                <button class="open-menu">
+                    <span class="text">Меню</span>
+                    <span class="icon-drop"></span>
+                </button>
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Акции</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">О нас</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Блог</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Новости</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">Контакты</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#" class="header__nav__link">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__user js-drop-item">
+                <form action="#" class="live-search-form">
+                    <label class="header__live-search">
+                        <input type="text" class="input-live-search" placeholder="Что искать?">
+                        <button type="submit">
+                            <span class="icon-search"></span>
+                        </button>
+                        
+                    </label>
+                </form>
+                <button class="mobile-search js-drop-button">
+                    <span class="icon-search"></span>
+                </button>
+                <a href="#" class="header__enter">
+                    <span class="icon-enter"></span>
+                    <span class="header__enter__text">Войти</span>
+                </a>
+            </div>
+        </div>
+        <div class="header__info">
+            <a href="#" class="header__logo">
+                <img src="./img/logo.svg" alt="Djini">
+            </a>
+            <button class="open__category">
+                <span class="text">категории</span>
+                <span class="icon-drop"></span>
+            </button>
+            <div class="header__category__wrapper">
+                <ul class="header__name-category__list">
+                    <button class="category-close">
+                        <span class="icon-close"></span>
+                    </button>
+                    <li class="header__name-category__item js-drop-item">
+                        <button class="header__name-category__button js-drop-button">
+                            <span class="text">спортивное питание</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="header__category-block">
+                            <ul class="header__category__list">
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Изолят протеина</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Соевый протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аминокислоты</a>
+                                        <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">спортивное питание для суставов и связок</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Коллаген</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Хондропротекторы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеиновые батончики</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">BCAA</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">гейнеры</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокобелковые гейнеры</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокоуглеводные гейнеры</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Жиросжигатели</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">L-карнитин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексные жиросжигатели</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аксессуары для спортивного питания</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Креатин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Кератин могонидрант</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Витамины и минералы для спорта</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Жирные кислоты Омега</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">предтренировочные комплексы</a>
+                                </li>
+                            </ul>
+                            <div class="header__category__img" style="background-image: url(./img/category-img.png)"></div>
+                        </div>
+                    </li>
+                    <li class="header__name-category__item js-drop-item">
+                        <button class="header__name-category__button js-drop-button">
+                            <span class="text">витамины и минералы</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="header__category-block">
+                            <ul class="header__category__list">
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Изолят протеина</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Соевый протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аминокислоты</a>
+                                        <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">спортивное питание для суставов и связок</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Коллаген</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Хондропротекторы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеиновые батончики</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">BCAA</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">гейнеры</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокобелковые гейнеры</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокоуглеводные гейнеры</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Жиросжигатели</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">L-карнитин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексные жиросжигатели</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аксессуары для спортивного питания</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Креатин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Кератин могонидрант</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Витамины и минералы для спорта</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Жирные кислоты Омега</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">предтренировочные комплексы</a>
+                                </li>
+                            </ul>
+                            <div class="header__category__img" style="background-image: url(./img/category-img.png)"></div>
+                        </div>
+                    </li>
+                    <li class="header__name-category__item js-drop-item">
+                        <button class="header__name-category__button js-drop-button">
+                            <span class="text">бады</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="header__category-block">
+                            <ul class="header__category__list">
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Изолят протеина</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Соевый протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аминокислоты</a>
+                                        <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">спортивное питание для суставов и связок</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Коллаген</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Хондропротекторы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеиновые батончики</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">BCAA</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">гейнеры</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокобелковые гейнеры</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокоуглеводные гейнеры</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Жиросжигатели</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">L-карнитин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексные жиросжигатели</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аксессуары для спортивного питания</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Креатин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Кератин могонидрант</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Витамины и минералы для спорта</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Жирные кислоты Омега</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">предтренировочные комплексы</a>
+                                </li>
+                            </ul>
+                            <div class="header__category__img" style="background-image: url(./img/category-img.png)"></div>
+                        </div>
+                    </li>
+                    <li class="header__name-category__item js-drop-item">
+                        <button class="header__name-category__button js-drop-button">
+                            <span class="text">косметика</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="header__category-block">
+                            <ul class="header__category__list">
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Изолят протеина</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Соевый протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аминокислоты</a>
+                                        <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">спортивное питание для суставов и связок</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Коллаген</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Хондропротекторы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеиновые батончики</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">BCAA</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">гейнеры</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокобелковые гейнеры</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокоуглеводные гейнеры</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Жиросжигатели</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">L-карнитин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексные жиросжигатели</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аксессуары для спортивного питания</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Креатин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Кератин могонидрант</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Витамины и минералы для спорта</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Жирные кислоты Омега</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">предтренировочные комплексы</a>
+                                </li>
+                            </ul>
+                            <div class="header__category__img" style="background-image: url(./img/category-img.png)"></div>
+                        </div>
+                    </li>
+                    <li class="header__name-category__item js-drop-item">
+                        <button class="header__name-category__button js-drop-button">
+                            <span class="text">продукты</span>
+                            <span class="icon-drop"></span>
+                        </button>
+                        <div class="header__category-block">
+                            <ul class="header__category__list">
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Изолят протеина</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Соевый протеин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аминокислоты</a>
+                                        <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Сывороточный протеин</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">спортивное питание для суставов и связок</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Коллаген</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Хондропротекторы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">протеиновые батончики</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">BCAA</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">гейнеры</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокобелковые гейнеры</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Высокоуглеводные гейнеры</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Жиросжигатели</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">L-карнитин</a>
+                                        </li>
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Комплексные жиросжигатели</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Аксессуары для спортивного питания</a>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Креатин</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Кератин могонидрант</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">Витамины и минералы для спорта</a>
+                                    <ul class="header__sub__list">
+                                        <li class="header__sub__item">
+                                            <a href="#" class="header__sub__link">Жирные кислоты Омега</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__category__item">
+                                    <a href="#" class="header__category__link">предтренировочные комплексы</a>
+                                </li>
+                            </ul>
+                            <div class="header__category__img" style="background-image: url(./img/category-img.png)"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__callback">
+                <span class="header__callback__decor">
+                    <span class="icon-phone"></span>
+                </span>
+                <div class="header__callback__wrapper">
+                    <a href="tel: 099-777-33-45" class="header__callback__link">099-777-33-45</a>
+                    <a href="tel: 097-777-33-45" class="header__callback__link">097-777-33-45</a>
+                </div>
+            </div>
+            <div class="header__shop">
+                <a href="#" class="header__shop__item">
+                    <span class="icon-like"></span>
+                    <span class="header__shop__num">1</span>
+                </a>
+                <div class="header__cart__link">
+                    <a href="#" class="header__shop__item">
+                        <span class="icon-cart"></span>
+                        <span class="header__shop__num">2</span>
+                    </a>
+                    <div class="header__cart">
+                        <ul class="header__cart__list">
+                            <li class="header__cart__item">
+                                <button class="header__cart__delete">
+                                    <span class="icon-close"></span>
+                                </button>
+                                <div class="header__cart__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </div>
+                                <div class="header__cart__content">
+                                    <h3 class="product__name">
+                                        <a href="#">OMEGA-3 PREMIUM FISH OIL, CALIFORNIA GOLD NUTRITION, РЫБИЙ ЖИР CALIFORNIA GOLD NUTRITION</a>
+                                    </h3>
+                                    <div class="header__cart__wrapper">
+                                        <div class="general-calc">
+                                            <button class="delete">–</button> 
+                                            <input type="number" class="calc-input" value="1">
+                                            <button class="add">+</button>
+                                        </div>
+                                        <div class="product__price">
+                                            <p class="old__price">300</p>
+                                            <p class="current_price"><span>250</span>грн</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart__item">
+                                <button class="header__cart__delete">
+                                    <span class="icon-close"></span>
+                                </button>
+                                <div class="header__cart__img">
+                                    <img src="./img/product-img-1.png" alt="Product">
+                                </div>
+                                <div class="header__cart__content">
+                                    <h3 class="product__name">
+                                        <a href="#">OMEGA-3 PREMIUM FISH OIL, CALIFORNIA GOLD NUTRITION, РЫБИЙ ЖИР CALIFORNIA GOLD NUTRITION</a>
+                                    </h3>
+                                    <div class="header__cart__wrapper">
+                                        <div class="general-calc">
+                                            <button class="delete">–</button> 
+                                            <input type="number" class="calc-input" value="4">
+                                            <button class="add">+</button>
+                                        </div>
+                                        <div class="product__price">
+                                            <p class="old__price">300</p>
+                                            <p class="current_price"><span>250</span>грн</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="main-button">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <ul class="breadcrumbs__list container">
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Спортивное питание</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <ul class="footer__list">
+                <li class="footer__item footer-drop__item js-drop-item">
+                    <h4 class="footer__caption">Гид по покупке</h4>
+                    <button class="footer__button js-drop-button">
+                        <span class="footer__button__text">
+                            <span class="text">Гид по покупке</span>
+                            <span class="icon-drop"></span>
+                        </span>
+                    </button>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">О нас</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">FAQ</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">Новости</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">Акции</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">Договор публичной оферты</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">Условия возврата товара</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item footer-drop__item js-drop-item">
+                    <h4 class="footer__caption">информация</h4>
+                    <button class="footer__button js-drop-button">
+                        <span class="footer__button__text">
+                            <span class="text">информация</span>
+                            <span class="icon-drop"></span>
+                        </span>
+                    </button>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">Контакты</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="#" class="footer-info__link">Блог</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h4 class="footer__caption">свяжитесть с нами</h4>
+                    <ul class="footer-callback__list">
+                        <li class="footer-callback__item">
+                            <div class="footer__icon">
+                                <span class="icon-phone"></span>
+                            </div>
+                            <div class="footer__link__wrapper">
+                                <a href="tel: 099-777-33-45" class="footer-callback__link">099-777-33-45</a>
+                                <a href="tel: 099-777-33-45" class="footer-callback__link">099-777-33-45</a>
+                            </div>
+                        </li>
+                        <li class="footer-callback__item">
+                            <div class="footer__icon">
+                                <span class="icon-place"></span>
+                            </div>
+                            <a href="#" class="footer-callback__link">г. Днепр, ул. Барикадная 4в</a>
+                        </li>
+                        <li class="footer-callback__item">
+                            <div class="footer__icon">
+                                <span class="icon-e-mail"></span>
+                            </div>
+                            <a href="mailto: djini.in.ua@gmail.com" class="footer-callback__link">djini.in.ua@gmail.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__item">
+                    <h4 class="footer__caption">мы в социальных сетях</h4>
+                    <ul class="footer-social__list">
+                        <li class="footer-social__item">
+                            <a href="#" class="footer-social__link">
+                                <span class="icon-fb"></span>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="#" class="footer-social__link">
+                                <span class="icon-teleg"></span>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="#" class="footer-social__link">
+                                <span class="icon-inst"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="footer__caption">мы принимаем</h4>
+                    <ul class="footer-pay__list">
+                        <li class="footer-pay__item" style="background-image:url(./img/visa.svg)"></li>
+                        <li class="footer-pay__item" style="background-image:url(./img/mastercard.svg)"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copyright">
+            <p>©2020 Все прaва защищены</p>
+        </div>
+    </footer>
+    <div class="button-to-top">
+        <button class="to-top">
+            <span class="icon-to-top"></span>
+        </button>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
