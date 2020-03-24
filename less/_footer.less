@@ -84,7 +84,6 @@
 }
 
 .footer-callback__item {
-    
     &:first-child {
         .footer-callback__link {
             &:first-of-type {
@@ -92,6 +91,10 @@
             }
         }
     }
+}
+
+.footer-callback__link {
+    transition: color .4s;
 }
 
 .footer-social__list {
@@ -116,6 +119,9 @@
 
 .footer-social__link {
     line-height: 0px;
+    color: #80b435;
+    padding: 5px;
+    transition: color 0.4s;
     
     .icon-fb {
         font-size: 16px;

@@ -75,6 +75,7 @@ body {
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #3D3D3D;
 }
 
 .container {
@@ -90,7 +91,7 @@ body {
     max-width: 100%;
     width: 100%;
     height: 44px;
-    background: #A2D242;
+    background-color: #A2D242;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     color: #FFFFFF;
@@ -99,6 +100,7 @@ body {
     line-height: 14px;
     font-weight: 700px;
     letter-spacing: 0.05em;
+    transition: background-color .4s;
     
     .icon-cart {
         padding-right: 10px;
@@ -109,6 +111,25 @@ body {
     }
 }
 
+.main-button-else {
+    max-width: 227px;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #3D3D3D;
+    transition: color .4s;
+}
+
 .main-caption {
     font-family: 'Oswald', sans-serif;
     color: #292929;
@@ -117,6 +138,25 @@ body {
     line-height: 62px;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.main-caption-m {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.main-caption-s {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .main-sub-caption {
@@ -145,6 +185,8 @@ body {
         border-radius: 50%;
         background-color: #FFFFFF;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        color: #949494;
+        transition: color .4s;
         
         .icon-arrow-left {
             margin-left: -4px;
@@ -202,7 +244,7 @@ body {
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.6);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        transition: border-color 0.4s, color 0.4s;
+        transition: background-color .4s;
     }
     
     .icon-to-top {
@@ -224,9 +266,11 @@ body {
     line-height: 21px;
     text-align: center;
     letter-spacing: 0.05em;
+    color: #3D3D3D;
     
     button {
         padding: 10px;
+        transition: color .4s;
     }
 }
 
@@ -245,6 +289,7 @@ body {
 
 .breadcrumbs__list {
     display: flex;
+    flex-wrap: wrap;
     font-size: 16px;
     line-height: 19px;
     color: #3D3D3D;
@@ -274,5 +319,6 @@ body {
         }
     }
 }
+
 
 /* /General */
