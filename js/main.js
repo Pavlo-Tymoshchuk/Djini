@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // Main input
     
     function customePlaceholder() {
-        let allInput = document.querySelectorAll('.main-input');
+        let allInput = document.querySelectorAll('.js-input');
         
         if(allInput) {
             allInput.forEach(function(item){
@@ -371,29 +371,37 @@ document.addEventListener('DOMContentLoaded', function(){
     customePlaceholder();
     
     
-    let prodileTabs = document.querySelectorAll('.profile-tabs__item');
-    
-    prodileTabs.forEach(function (item){
-        
-        item.addEventListener('click', function(){
-            setTimeout(customePlaceholder, 100);
-        })
-    });
-    
     document.addEventListener('keyup', function(e){
         let item = e.target;
         
-        if(item.closest('.main-input')) {
-            let itemLenght = item.closest('.main-input').value.length;
+        if(item.closest('.js-input')) {
+            let itemLenght = item.closest('.js-input').value.length;
             if(itemLenght) {
-                item.closest('.main-input').classList.add('active');
+                item.closest('.js-input').classList.add('active');
             }else {
-                item.closest('.main-input').classList.remove('active');
+                item.closest('.js-input').classList.remove('active');
             }
         }
         
     });
     
     // /Main input
+    
+    // Stars 
+    
+    document.addEventListener("click", function(e){
+        let item = e.target;
+        
+        if(item.closest('.js-stars-item')) {
+            let value = item.closest('.js-stars-item').getAttribute('data-index');
+            let allStars = document.querySelectorAll(".js-stars-item");
+            
+            allStars.forEach(function(item){
+                item.classList.remove('active');
+            });
+            item.closest('.js-stars-item').classList.add('active');
+            document.querySelector(".js-input-stars").value = value;
+        }
+    });
 
 });
