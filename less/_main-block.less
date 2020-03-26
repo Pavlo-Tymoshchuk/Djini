@@ -640,7 +640,7 @@
     height: 63px;
     border-radius: 50%;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .reviews__name {
@@ -1466,6 +1466,7 @@
     
     .reviews__info {
         margin-top: auto;
+        margin-right: 40px;
     }
     
     .reviews__content {
@@ -1759,6 +1760,9 @@
     
     a {
         padding: 15px;
+        display: flex;
+        justify-self: center;
+        align-items: center;
     }
     
     .icon-teleg {
@@ -1867,7 +1871,7 @@
 }
 
 .blog__container {
-    width: calc(65% - 45px);
+    width: calc(66% - 45px);
     
     .main-button-else {
         margin: 50px auto 0px;
@@ -1875,7 +1879,7 @@
 }
 
 .general-popular {
-    width: calc(35% - 45px);
+    width: calc(34% - 45px);
     height: 100%;
     background-color: #F8F8F8;
     border-radius: 20px;
@@ -1959,10 +1963,23 @@
 .blog-page__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 
 .blog-page__content {
     width: calc(65% - 45px);
+    
+    .news__autor {
+        margin: 20px 0px;
+    }
+    
+    .main-textarea {
+        height: 132px;
+    }
+    
+    .add-reviews__wrapper {
+        margin-bottom: 80px;
+    }
 }
 
 .blog-page__img {
@@ -1973,3 +1990,56 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.blog-page__info {
+    font-size: 18px;
+    line-height: 150%;
+    
+    p {
+        margin-bottom: 20px;
+        
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    
+    h4 {
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+}
+
+/* /Blog page */
+
+/* Reviews */
+
+.reviews-page__wrapper {
+    margin-bottom: 150px;
+    
+    .add-reviews__wrapper {
+        max-width: 62.5%;
+        width: 100%;
+        margin: 50px auto 150px;
+    }
+    
+    .main-textarea {
+        height: 132px;
+    }
+    
+    .reviews__list {
+        display: block;
+        column-count: 2;
+        column-gap: 0;
+    }
+    
+    .reviews__item {
+        break-inside: avoid;
+        margin-right: 0px;
+        width: calc(100% - 30px);
+        margin-bottom: 80px;
+        
+    }
+}
+
+/* /Reviews */

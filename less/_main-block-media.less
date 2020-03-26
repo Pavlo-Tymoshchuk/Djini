@@ -93,7 +93,7 @@
     /* Blog */
     
     .blog__container {
-        width: calc(65% - 15px);
+        width: calc(66% - 15px);
     }
     
     .news__list {
@@ -106,7 +106,7 @@
     }
     
     .general-popular {
-        width: calc(35% - 15px);
+        width: calc(34% - 15px);
     }
     
     /* /Blog */
@@ -294,6 +294,30 @@
     }
     
     /* /Blog */
+    
+    /* Reviews */
+    
+    
+    .reviews-page__wrapper {
+        .reviews__list {
+            column-count: auto;
+            margin-right: 0px;
+        }
+        
+        .reviews__item {
+            width: 100%;
+            
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        
+        .add-reviews__wrapper {
+            max-width: 100%;
+        }
+    }
+    
+    /* Reviews */
 }
 
 @media screen and (max-width: 1180px) {
@@ -371,6 +395,24 @@
     }
     
     /* /Blog */
+    
+    /* Blog page */
+    
+    .blog-page__content {
+        .general-popular__date .decor {
+            width: 13px;
+            height: 16px;
+        }
+        
+        .general-popular__date,
+        .news__autor {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    
+    /* Blog page */
+    
 }
 @media screen and (max-width: 1080px) {
     
@@ -817,6 +859,86 @@
     
     /* /Contact */
     
+    /* Blog page */
+    
+    .blog-page {
+        .main-caption {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    
+    .blog-page__wrapper {
+        margin-bottom: 75px;
+        
+        .general-popular {
+            margin-top: 70px;
+        }
+    }
+    
+    .blog-page__content {
+        width: calc(65% - 15px);
+        
+        .news__autor {
+            margin: 10px 0px;
+        }
+        
+        .general-popular__date .decor {
+            width: 12px;
+            height: 14px;
+        }
+        
+        .add-reviews {
+            margin-top: 30px;
+        }
+        
+        .add-reviews__wrapper {
+            margin-bottom: 50px;
+        }
+        
+        .form-button {
+            margin: 20px 0px 0px auto;
+            max-width: 57%;
+        }
+        
+        .reviews__list {
+            width: calc(100vw - 40px);
+        }
+    }
+
+    
+    .blog-page__info {
+        h4 {
+            font-size: 20px;
+            line-height: 130%;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .blog-page__img {
+        height: 160px;
+        margin: 20px 0px;
+    }
+    
+    /* /Blog page */
+    
+    /* Reviews */
+    
+    .reviews-page__wrapper {
+        margin-bottom: 80px;
+        
+        .add-reviews__wrapper {
+            margin: 30px 0px 80px;
+        }
+        
+        .reviews__item {
+            margin-bottom: 50px;
+        }
+        
+        .add-reviews {
+            margin-top: 0px;
+        }
+    }
    
 }
 
@@ -896,6 +1018,55 @@
     }
     
     /* /Blog */
+    
+    /* Blog page */
+    
+    .blog-page__wrapper {
+        flex-direction: column;
+        margin-bottom: 80px;
+        
+         .general-popular {
+            display: none;
+        }
+        
+        .product__reviews__wrapper {
+            display: block;
+        }
+    }
+    
+    .blog-page__content {
+        width: 100%;
+        
+        .news__autor {
+            margin-top: 20px;
+        }
+    }
+    
+    .blog-page__img {
+        height: 183px;
+    }
+    
+    .blog-page__info {
+        font-size: 18px;
+        
+        h4 {
+            font-size: 18px;
+        }
+    }
+    
+    /* /Blog page */
+    
+    /* Reviews */
+    
+    .reviews-page__wrapper {
+        margin-bottom: 50px;
+        
+        .add-reviews__wrapper {
+            margin: 20px 0px 50px;
+        }
+    }
+    
+     /* /Reviews */
 }
 
 @media screen and (max-width: 575px) {
@@ -1164,7 +1335,7 @@
     }
     
     .reviews__body {
-        margin-bottom: 38px;
+        margin-bottom: 20px;
     }
     
     .reviews__footer {
@@ -1180,6 +1351,7 @@
     .reviews-slider__item {
         .reviews__body {
             max-height: 144px;
+            margin-bottom: 38px;
         }
     }
     

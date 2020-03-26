@@ -65,6 +65,10 @@
 
 .popup-reviews__wrapper {
     display: flex;
+    
+    .item__more {
+        display: none;
+    }
 }
 
 .popup-general-info {
@@ -80,4 +84,50 @@
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 30px;
+}
+
+.popup-add-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    text-align: center;
+    
+    
+    > span {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    
+    h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        margin-bottom: 30px;
+    }
+    
+    .general-social__list {
+        margin: 20px 0px 30px;
+    }
+}
+
+.popup-enter__link {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-decoration: underline;
+    transition: color .4s;
+}
+
+@media screen and (max-width: 575px) {
+    .popup {
+        max-width: 97%;
+        padding: 25px;
+    }
+    
+    .popup-reviews__wrapper {
+        flex-direction: column;
+    }
 }
