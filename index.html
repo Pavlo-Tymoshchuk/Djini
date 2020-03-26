@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -578,8 +578,6 @@
                 </ul>
             </div>
             
-            
-            
             <div class="header__callback display-none">
                 <span class="header__callback__decor">
                     <span class="icon-phone"></span>
@@ -602,6 +600,7 @@
                         <span class="icon-cart"></span>
                         <span class="header__shop__num">2</span>
                     </a>
+                    
                     <!-- Это корзина по ховеру, её можно не выводить после 1260 -->
                     
                     <div class="header__cart">
@@ -1218,7 +1217,20 @@
         </div>
         
         <!-- Это нужно выводить после 576px -->
+        
     </header>
+    
+    <!-- push-notifications -->
+    <!-- <section class="push-notifications">
+        <ul class="push_notification__list">
+             Класс "error" для ошибок 
+            <li class="noty_theme__push_notification__item">
+                <div class="noty-icon"></div>
+                <p>Товар добавлен в корзину</p>
+            </li>
+        </ul>
+    </section> -->
+    <!-- push-notifications -->
     <main>
         <section class="main-banner">
             <ul class="main-banner__list">
@@ -2175,56 +2187,6 @@
                                     <span>Ответить</span>
                                     <span class="icon-message"></span>
                                 </a>
-                                <button class="item__more js-button js-more">
-                                    <span>читать далее</span>
-                                    <span class="icon-more-arrow"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="reviews__item reviews-slider__item js-slider-item-infinity js-item">
-                        <div class="reviews__info">
-                            <ul class="general__stars__list">
-                                <li class="general__stars__item">
-                                    <span class="icon-star"></span>
-                                </li>
-                                <li class="general__stars__item">
-                                    <span class="icon-star"></span>
-                                </li>
-                                <li class="general__stars__item active">
-                                    <span class="icon-star"></span>
-                                </li>
-                                <li class="general__stars__item">
-                                    <span class="icon-star"></span>
-                                </li>
-                                <li class="general__stars__item">
-                                    <span class="icon-star"></span>
-                                </li>
-                            </ul>
-                            <div class="reviews__photo" style="background-image: url(./img/reviews-photo.png)"></div>
-                            <h5 class="reviews__name">Ростислав</h5>
-                        </div>
-                        <div class="reviews__content">
-                            <div class="reviews__header">
-                                <h4 class="reviews__name-product">Протеин Impact Whey </h4>
-                                <p class="reviews__date">18 фев 2020</p>
-                            </div>
-                            <div class="reviews__body js-content">
-                                <p>Изолят бомба, взял 2 вкуса, натуральный шоколад и брауни, оба вкуснотища, мешаю с водой, с молоком вообще сказка 0,5%, вкуснотища, мешаю с водой, с молоком вообще сказ ом вообще сказ</p>
-                            </div>
-                            <div class="reviews__footer">
-                                <button class="reviews__icons">
-                                    <span class="icon-like-finger"></span>
-                                    <span class="number">1</span>
-                                </button>
-                                <p class="reviews__icons">
-                                    <span class="icon-message"></span>
-                                    <span class="number">1</span>
-                                </p>
-                                <a href="#" class="reviews__callback">
-                                    <span>Ответить</span>
-                                    <span class="icon-message"></span>
-                                </a>
                                 <button class="item__more js-button js-more" data-target="reviews">
                                     <span>читать далее</span>
                                     <span class="icon-more-arrow"></span>
@@ -2325,7 +2287,57 @@
                                     <span>Ответить</span>
                                     <span class="icon-message"></span>
                                 </a>
-                                <button class="item__more js-more" data-target="reviews">
+                                <button class="item__more js-button js-more" data-target="reviews">
+                                    <span>читать далее</span>
+                                    <span class="icon-more-arrow"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__item reviews-slider__item js-slider-item-infinity js-item">
+                        <div class="reviews__info">
+                            <ul class="general__stars__list">
+                                <li class="general__stars__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="general__stars__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="general__stars__item active">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="general__stars__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                                <li class="general__stars__item">
+                                    <span class="icon-star"></span>
+                                </li>
+                            </ul>
+                            <div class="reviews__photo" style="background-image: url(./img/reviews-photo.png)"></div>
+                            <h5 class="reviews__name">Ростислав</h5>
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__header">
+                                <h4 class="reviews__name-product">Протеин Impact Whey </h4>
+                                <p class="reviews__date">18 фев 2020</p>
+                            </div>
+                            <div class="reviews__body js-content">
+                                <p>Изолят бомба, взял 2 вкуса, натуральный шоколад и брауни, оба вкуснотища, мешаю с водой, с молоком вообще сказка 0,5%, вкуснотища, мешаю с водой, с молоком вообще сказ ом вообще сказ</p>
+                            </div>
+                            <div class="reviews__footer">
+                                <button class="reviews__icons">
+                                    <span class="icon-like-finger"></span>
+                                    <span class="number">1</span>
+                                </button>
+                                <p class="reviews__icons">
+                                    <span class="icon-message"></span>
+                                    <span class="number">1</span>
+                                </p>
+                                <a href="#" class="reviews__callback">
+                                    <span>Ответить</span>
+                                    <span class="icon-message"></span>
+                                </a>
+                                <button class="item__more js-button js-more" data-target="reviews">
                                     <span>читать далее</span>
                                     <span class="icon-more-arrow"></span>
                                 </button>
@@ -2396,6 +2408,12 @@
                     <span class="icon-arrow-right"></span>
                 </button>
             </div>
+        </section>
+        <section class="popup popup-reviews" data-target="reviews">
+            <button class="close__popup js-close">
+                <span class="icon-close"></span>
+            </button>
+            <div class="popup-reviews__wrapper"></div>
         </section>
     </main>
     <footer class="footer">
@@ -2509,6 +2527,20 @@
             <span class="icon-to-top"></span>
         </button>
     </div>
+    
+    <!-- Попап для текстовых сообщений -->
+    
+    <section class="popup popup-general-info">
+        <button class="close__popup js-close">
+            <span class="icon-close"></span>
+        </button>
+        <h3 class="popup-general__caption">Спасибо за ваш отзыв</h3>
+        <p>Благодаря Вам мы становимся лучше!</p>
+    </section>
+    
+    <!-- Попап для текстовых сообщений -->
+    
+    <div class="overlay"></div>
     <script>
         // Main banner
         

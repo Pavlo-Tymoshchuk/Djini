@@ -222,6 +222,10 @@ body {
     }
 }
 
+.general-more_mobile {
+    display: none;
+}
+
 .button-to-top {
     position: fixed;
     right: 50px;
@@ -431,6 +435,11 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+    
+    span {
+        color: #80B435;
+        padding-left: 2px;
+    }
 }
 
 .form-button {
@@ -454,4 +463,45 @@ body {
     transition: color .4s, box-shadow .4s;
 }
 
+
 /* /General */
+
+/* Push notification */
+
+.push-notifications {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    max-width: 500px;
+    width: 100%;
+    z-index: 4;
+}
+
+.noty_theme__push_notification__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 130%;
+    color: #ffffff;
+    padding: 30px;
+    background-color: #80B435;
+    border-radius: 20px 0px 0px 20px;
+    
+    .noty-icon {
+        width: 16px;
+        height: 16px;
+        background: url(../img/noty-icon.svg) center / contain no-repeat ;
+        margin-right: 10px;
+    }
+    
+    &.error {
+        background-color: #ED6663;
+        
+        .noty-icon {
+            display: none;
+        }
+    }
+}
+
+/* /Push notification */

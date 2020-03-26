@@ -89,6 +89,27 @@
      }
      
      /* /Page product */
+     
+    /* Blog */
+    
+    .blog__container {
+        width: calc(65% - 15px);
+    }
+    
+    .news__list {
+        margin-right: -30px;
+    }
+    
+    .news__item {
+        margin-right: 30px;
+        width: calc(33.33% - 30px);
+    }
+    
+    .general-popular {
+        width: calc(35% - 15px);
+    }
+    
+    /* /Blog */
 }
 
 @media screen and (max-width: 1380px) {
@@ -223,13 +244,56 @@
      }
      
      
-     .product-info__wrapper {
+     .product__reviews__wrapper {
          .reviews__body {
              margin-bottom: 15px;
          }
      }
      
      /* /Page product */
+     
+     /* About us */
+     
+     .about-us__header {
+         flex-direction: column;
+     }
+     
+     .about-us__info {
+         width: 100%;
+     }
+     
+     .about-us-photo__list {
+         width: 100%;
+         margin-top: 40px;
+     }
+     
+     .about-us__list {
+         flex-direction: column;
+     }
+     
+     .about-us__item {
+         width: 100%;
+         margin-bottom: 30px;
+         
+         &:last-child {
+             margin-bottom: 0px;
+         }
+     }
+     
+     /* /About us */
+     
+    /* Blog */
+    
+    .blog__wrapper {
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .news__item {
+        width: calc(50% - 30px);
+    }
+    
+    /* /Blog */
 }
 
 @media screen and (max-width: 1180px) {
@@ -254,6 +318,59 @@
      }
      
      /* /Page product */
+     
+      /* Blog */
+    
+    .general-popular__caption {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .general-popular__list {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    
+    .general-popular__item {
+        flex-direction: column;
+    }
+    
+    .general-popular__img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .general-popular__info {
+        width: 100%;
+    }
+    
+    .general-popular {
+        padding: 30px;
+    }
+    
+    .popular__info__caption {
+        font-size: 14px;
+        line-height: 120%;
+        margin-bottom: 5px;
+    }
+    
+    .general-popular__date {
+        font-size: 12px;
+        line-height: 12px;
+        
+        .decor {
+            width: 12px;
+            height: 10px;
+        }
+    }
+    
+    .blog__container {
+        .main-button-else {
+            margin: 30px auto 0px;
+        }
+    }
+    
+    /* /Blog */
 }
 @media screen and (max-width: 1080px) {
     
@@ -596,6 +713,111 @@
      
      
      /* /Page product */
+     
+     /* Faq */
+     
+     .faq {
+         margin-bottom: 80px;
+     }
+     
+    .faq__list {
+        flex-direction: column;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    
+    .faq__item {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .faq__number {
+        margin-bottom: 10px;
+    }
+    
+    .faq__caption {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    /* /Faq */
+    
+    /* About us */ 
+    
+    .about-us__header {
+        margin: 30px 0px 80px;
+    }
+    
+    .about-us__caption {
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+    
+    .about-us-photo__item {
+        height: 225px;
+    }
+    
+    .about-us__item {
+        .caption {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .about-us__footer {
+        margin: 80px 0px;
+        
+        h3 {
+            font-size: 30px;
+        }
+    }
+    
+    /* /About us */ 
+    
+    /* Contact */
+    
+    .contact__wrapper {
+        margin-bottom: 80px;
+    }
+    
+    .contact__caption {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .contact__info_header {
+        flex-direction: column;
+    }
+    
+    .contact__header_item {
+        width: 100%;
+        
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+    
+    .contact__info_body {
+        margin: 30px 0px 20px;
+    }
+    
+    .contact__info_footer {
+        height: 225px;
+    }
+    
+    .contact__form {
+        .input__wrapper {
+            margin-bottom: 20px;
+        }
+        
+        .form-button {
+            margin: 20px auto 0px;
+        }
+    }
+    
+    /* /Contact */
+    
+   
 }
 
 @media screen and (max-width: 767px) {
@@ -632,7 +854,7 @@
         padding: 10px;
     }
     
-    .product-info__wrapper {
+    .product__reviews__wrapper {
         .reviews__item {
             .reviews__list {
                 padding-left: 50px;
@@ -641,6 +863,39 @@
     }
     
     /* /Page product */
+    
+    /* About us */  
+    
+    .about-us-photo__item {
+        width: calc(50% - 15px);
+        
+        &:nth-child(n + 3) {
+            display: none;
+        }
+    }
+    
+    /* /About us */
+    
+    /* Blog */
+    
+    .blog__wrapper {
+        flex-direction: column;
+    }
+    
+    .blog__container {
+        width: 100%;
+    }
+    
+    .general-popular {
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+    .general-popular__img {
+        height: 170px;
+    }
+    
+    /* /Blog */
 }
 
 @media screen and (max-width: 575px) {
@@ -1273,9 +1528,7 @@
     
     .product__reviews__wrapper {
         display: none;
-    }
-    
-    .product-info__wrapper {
+        
         .reviews-item__wrapper {
             flex-direction: column;
         }
@@ -1346,4 +1599,155 @@
     .form-button {
         margin-top: 10px;
     }
+    
+    /* /Page product */
+    
+    /* Faq */
+    
+    .faq {
+        margin-bottom: 50px;
+    }
+    
+    .faq__list {
+        margin-top: 20px;
+    }
+    
+    .faq__item {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .faq__item_header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .faq__number {
+        margin-bottom: 0px;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+    
+    .faq__caption {
+        font-size: 16px;
+        line-height: 120%;
+    }
+    
+    /* /Faq */
+    
+    /* About us */
+    
+    .about-us__header {
+        margin: 30px 0px;
+    }
+    
+    .about-us__caption {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .about-us-photo__list {
+        margin-top: 20px;
+    }
+    
+    .about-us-photo__item {
+        width: 100%;
+        height: 280px;
+        
+        &:nth-child(n + 2) {
+            display: none;
+        }
+    }
+    
+    .about-us__item {
+        padding: 20px;
+        margin-bottom: 20px;
+        
+        .caption {
+            font-size: 18px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+    }
+    
+    .about-us__footer {
+        margin: 50px 0px;
+        
+        h3 {
+            font-size: 20px;
+            line-height: 120%;
+        }
+    }
+    
+    /* /About us */
+    
+    /* Contact */
+    .contact__wrapper {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .contact__info {
+        width: 100%;
+    }
+    
+    .contact__header_item {
+        &:first-child {
+            margin-bottom: 40px;
+        }
+    }
+    
+    .contact__info_body {
+        margin: 40px 0px 20px;
+    }
+    
+    .contact__info_footer {
+        height: 350px;
+    }
+    
+    .contact__form {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    /* /Contact */
+    
+    /* Blog */
+    
+    .blog__wrapper {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .general-popular__item {
+        flex-direction: row;
+    }
+    
+    .general-popular__img {
+        width: calc(50% - 10px);
+    }
+    
+    .general-popular__item {
+        margin-bottom: 20px;
+    }
+    
+    .general-popular__img {
+        height: 85px;
+        margin-bottom: 0px;
+    }
+    
+    .general-popular__info {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 10px);
+    }
+    
+    .general-popular__date {
+        margin-top: auto;
+    }
+    
+    /* Blog */
 }

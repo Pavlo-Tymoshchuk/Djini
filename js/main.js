@@ -237,6 +237,20 @@ document.addEventListener('DOMContentLoaded', function(){
         showMoreInfo();
     });
     
+
+    
+    document.addEventListener('click', function(e){
+        let elem = e.target;
+        
+        if(elem.closest(".js-more")) {
+            let wrapper = elem.closest(".js-more").closest('.js-item');
+            let firstElem = wrapper.querySelector(".reviews__info").cloneNode(true);
+            let secondElem = wrapper.querySelector(".reviews__content").cloneNode(true);
+            document.querySelector('.popup-reviews__wrapper').append(firstElem);
+            document.querySelector('.popup-reviews__wrapper').append(secondElem);
+        }
+    });
+    
     // /More info
     
     // Scroll to top
@@ -403,5 +417,63 @@ document.addEventListener('DOMContentLoaded', function(){
             document.querySelector(".js-input-stars").value = value;
         }
     });
+    
+    // //Stars 
+    
+    // Popup
+        
+    let mainButton = document.querySelectorAll('.js-button');
+    let overlay = document.querySelector('.overlay');
+    let htmlOverflow = document.querySelector('html');
+    
+    for(var i = 0; mainButton.length > i; i++) {
+        if(mainButton[i] !== null) {
+            
+            mainButton[i].addEventListener('click', function(){
+                let getData = this.getAttribute('data-target');
+                let popup = document.querySelector('.popup[data-target = ' + getData + ']');
+                popup.classList.add('active');
+                overlay.classList.add('active');
+                htmlOverflow.classList.add('overflow')
+            });
+        }
+    }
+    
+    document.addEventListener('click', function(e){
+        let elem = e.target;
+        
+        if(elem.closest('.js-close')){
+            let popupActive = document.querySelector('.popup.active');
+            let popupReviews = document.querySelector(".popup-reviews.active");
+            
+            if(popupReviews) {
+                popupReviews.querySelector('.reviews__info').remove();
+                popupReviews.querySelector('.reviews__content').remove();
+            }
+            
+            if(popupActive) {
+                
+                popupActive.classList.remove('active');
+                overlay.classList.remove('active');
+                htmlOverflow.classList.remove('overflow');
+            }
+        }
+    });
+
+    overlay.addEventListener('click', function(){
+        let popupActive = document.querySelector('.popup.active');
+        let popupReviews = document.querySelector(".popup-reviews.active");
+        
+        if(popupReviews) {
+            popupReviews.querySelector('.reviews__info').remove();
+            popupReviews.querySelector('.reviews__content').remove();
+        }
+        
+        popupActive.classList.remove('active');
+        overlay.classList.remove('active');
+        htmlOverflow.classList.remove('overflow');
+    });
+    
+    // //Popup
 
 });
