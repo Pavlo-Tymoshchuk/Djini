@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.addEventListener('click', function(e){
         let elem = e.target;
         
-        if(!elem.closest('.js-name-category') && !elem.closest('.open__category') && !elem.closest('.header-mobile__nav')) {
+        if(!elem.closest('.js-name-category') && !elem.closest('.open__category') && !elem.closest('.header-mobile__nav') && !elem.closest(".js-button")) {
             
             if(document.querySelector('.js-name-category')) {
                 document.querySelector('.js-name-category').classList.remove('active');
@@ -162,9 +162,22 @@ document.addEventListener('DOMContentLoaded', function(){
             let arrowNext = arrowsInfinity[i].querySelector('.next');
             let arrowPrev = arrowsInfinity[i].querySelector('.prev');
             let sliderList = slider.querySelector('.js-infinity-slider-list');
-
+            
+            
+            var checkSlider = true;
             
             arrowNext.addEventListener('click', function() {
+                
+                setTimeout(() => {
+                    checkSlider = true;
+                }, 400);
+                
+                if(!checkSlider) {
+                    return;
+                }
+                
+                checkSlider = false;
+                
                 let itemShow = slider.querySelector('.js-slider-item-infinity.show');
                 itemShow.nextElementSibling.classList.add('show');
                 itemShow.classList.remove('show');
@@ -173,11 +186,21 @@ document.addEventListener('DOMContentLoaded', function(){
                     let newElem = itemShow;
                     itemShow.remove();
                     sliderList.append(newElem);
-                },750);
+                },380);
                 
             });
             
             arrowPrev.addEventListener('click', function() {
+                setTimeout(() => {
+                    checkSlider = true;
+                }, 400);
+                
+                if(!checkSlider) {
+                    return;
+                }
+                
+                checkSlider = false;
+                
                 let itemShow = slider.querySelector('.js-slider-item-infinity.show');
                 let lastElem = sliderList.lastElementChild;
 
@@ -248,6 +271,14 @@ document.addEventListener('DOMContentLoaded', function(){
             let secondElem = wrapper.querySelector(".reviews__content").cloneNode(true);
             document.querySelector('.popup-reviews__wrapper').append(firstElem);
             document.querySelector('.popup-reviews__wrapper').append(secondElem);
+        }
+        
+        /* Cart mobile */
+        
+        if(elem.closest(".js-order")) {
+            let wrapper = elem.closest(".js-order-item");
+            let nameProduct = wrapper.querySelector(".order-product__name").innerHTML;
+            document.querySelector('.popup-calc__name').innerHTML = nameProduct;
         }
     });
     

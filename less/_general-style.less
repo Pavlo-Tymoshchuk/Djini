@@ -54,6 +54,14 @@ input[type=number]::-webkit-inner-spin-button {
             appearance: none;
 }
 
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+}
+
 html {
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
@@ -101,6 +109,8 @@ body {
     font-weight: 700px;
     letter-spacing: 0.05em;
     transition: background-color .4s;
+    user-select: none;
+    cursor: pointer;
     
     .icon-cart {
         padding-right: 10px;
@@ -325,17 +335,92 @@ body {
     }
 }
 
+.breadcrumbs__link {
+    transition: color .4s;
+}
 
 .input__wrapper {
     display: block;
     z-index: 1;
+    position: relative;
     
     .wrapper {
         position: relative;
         display: block;
         width: 100%;
     }
+    
+    .input-info {
+        font-size: 14px;
+        line-height: 17px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
 }
+
+.input-drop__container {
+    position: relative;
+    transition:  z-index 0s 0.4s;
+    
+    .main-input {
+        cursor: pointer;
+    }
+    
+    .drop-content {
+        width: 100%;
+        max-height: 0px;
+        transition: max-height .2s;
+        scrollbar-color: #F0F0F0 white;
+        scrollbar-width: thin;
+        overflow: auto;
+        position: absolute;
+        left: 0px;
+        top: calc(100% + 5px);
+        z-index: 3;
+        
+        .main-input {
+            cursor: text;
+        }
+        
+        
+        &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 5px;
+            height: 0;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: #F0F0F0;
+        }
+        
+    }
+    
+    &.active {
+        z-index: 3;
+        transition: z-index 0s 0s;
+        
+        .drop-content {
+            max-height: 400px;
+            transition: max-height .4s;
+        }
+        
+        .icon-drop {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+    
+    .icon-drop {
+        font-size: 5px;
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        pointer-events: none;
+        transform: translateY(-50%) rotate(0deg);
+        transition: transform .4s;
+    }
+}
+
 
 .main-textarea {
     width: 100%;
@@ -462,6 +547,12 @@ body {
     margin-top: 30px;
     margin-left: auto;
     transition: color .4s, box-shadow .4s;
+    cursor: pointer;
+    
+    &.disabled {
+        opacity: 0.6;
+        pointer-events: none;
+    }
 }
 
 

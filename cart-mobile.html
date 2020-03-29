@@ -1220,262 +1220,91 @@
         
     </header>
     <main>
-        <section class="breadcrumbs">
-            <ul class="breadcrumbs__list container">
-                <li class="breadcrumbs__item">
-                    <a href="#" class="breadcrumbs__link">Главная</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    <a href="#" class="breadcrumbs__link">Блог</a>
-                </li>
-            </ul>
-        </section>
-        <section class="blog-page">
-            <h3 class="main-caption container">ВЕГЕТАРИАНСКИЙ ОБРАЗ ЖИЗНИ</h3>
-            <div class="blog-page__wrapper container">
-                <div class="blog-page__content">
-                    <p class="news__autor">
-                        <span class="icon" style="background-image: url(./img/man.png)"></span>
-                        <span>Арни</span>
-                    </p>
-                    <p class="general-popular__date">
-                        <span class="decor" style="background-image:url(./img/data.svg)"></span>
-                        <span>25 февраля</span>
-                    </p>
-                    <div class="blog-page__img" style="background-image: url(./img/blog-page.png)"></div>
-                    <div class="blog-page__info">
-                        <p>Давайте представим, что завтра из всего окружающего нас мира исчезнет любое мясо – его не станет ни в виде сырого продукта, ни в переработанном виде – ни колбас, ни окороков, ни сосисок-сарделек…Что же мы будем тогда есть? Только растительную пищу? И все станем вегетарианцами? Ах, как был бы счастлив Альберт Эйнштейн, который считал, что «вегетарианская диета, хотя бы благодаря ее чисто физическому воздействию на человеческий темперамент, должна в высшей степени благотворно сказаться на судьбе человечества». Конечно, мечте Эйнштейна до воплощения предстоит еще долгий путь, но безусловно, что уже сегодня вегетарианство становится чуть ли не мэйнстримом, и неуклонно формируется мода на отказ от мясной пищи.</p>
-                        <h4>В мировой истории вегетарианцами становились самые передовые люди. </h4>
-                        <p>Известные вегетарианцы в историческом прошлом – это Леонардо да Винчи, Исаак Ньютон, Платон, Пифагор, Томас Эдисон, Лев Толстой и многие-многие другие. Каждый из них приходил к вегетарианству своим путем – или в силу философских и религиозных убеждений, или по состоянию здоровья, или даже в силу экономических обстоятельств. Многие становились убежденными вегетарианцами в результате длинного пути, иногда в конце жизни, как Лев Толстой. И практически все без исключения приходили к выводу, что вегетарианство – это не только тип питания, но и образ жизни в целом.</p>
-                        <p>Так в чем же состоит суть и основные преимущества вегетарианского образа жизни? Почему Эйнштейн утверждал – «ничто не принесет такой пользы человеческому здоровью и не увеличит шансы сохранения жизни на Земле, как распространение вегетарианства»?</p>
-                    </div>
-                    <div class="product__reviews__wrapper">
-                        <div class="add-reviews">
-                            <div class="add-reviews__wrapper">
-                                <form action="#">
-                                    <label class="input__wrapper">
-                                        <span class="input-caption">Ваш комментарий</span>
-                                        <span class="wrapper">
-                                            <textarea class="main-textarea js-input"></textarea>
-                                            <span class="custome-placeholder">Ваш комментарий</span>
-                                        </span>
-                                    </label>
-                                    <button class="form-button">отправить</button>
-                                </form>
+        <section class="cart-mobile">
+            <div class="cart-mobile__wrapper container">
+                <h3 class="main-caption">Корзина</h3>
+                <div class="order-product__header">
+                    <p class="item">товар</p>
+                </div>
+                <ul class="order-product__list js-order-item">
+                    <li class="order-product__item">
+                        <div class="order-product__item_wrapper">
+                            <div class="order-product__img">
+                                <img src="./img/product-img-1.png" alt="product">
+                            </div>
+                            <h4 class="order-product__name">OMEGA-3 PREMIUM FISH OIL, CALIFORNIA GOLD NUTRITION, РЫБИЙ ЖИР CALIFORNIA GOLD NUTRITIO11N</h4>
+                            <button class="order-product__delete">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                        <div class="order-product__item_wrapper">
+                            <div class="order-product__price">
+                                <div class="product__price">
+                                    <p class="old__price">300</p>
+                                    <p class="current_price"><span>250</span>грн</p>
+                                </div>
+                            </div>
+                            <div class="order-product__calc">
+                                <button class="js-button js-order" data-target="calc">
+                                    <span>2 шт</span>
+                                    <span class="change-icon"></span>
+                                </button>
+                            </div>
+                            <div class="order-product__total">
+                                <span>500</span>
+                                <span class="currency">грн</span>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="order-product__item js-order-item">
+                        <div class="order-product__item_wrapper">
+                            <div class="order-product__img">
+                                <img src="./img/product-img-1.png" alt="product">
+                            </div>
+                            <h4 class="order-product__name">OMEGA-3 PREMIUM FISH OIL, CALIFORNIA GOLD NUTRITION, РЫБИЙ ЖИР CALIFORNIA GOLD NUTRITION</h4>
+                            <button class="order-product__delete">
+                                <span class="icon-delete"></span>
+                            </button>
+                        </div>
+                        <div class="order-product__item_wrapper">
+                            <div class="order-product__price">
+                                <div class="product__price">
+                                    <p class="old__price">300</p>
+                                    <p class="current_price"><span>250</span>грн</p>
+                                </div>
+                            </div>
+                            <div class="order-product__calc">
+                                <button class="js-button js-order" data-target="calc">
+                                    <span>2 шт</span>
+                                    <span class="change-icon"></span>
+                                </button>
+                            </div>
+                            <div class="order-product__total">
+                                <span>500</span>
+                                <span class="currency">грн</span>
                             </div>
                         </div>
-                        <ul class="reviews__list">
-                            <li class="reviews__item">
-                                <div class="reviews-item__wrapper">
-                                    <div class="reviews__info">
-                                        <div class="reviews__photo" style="background-image: url(./img/reviews-photo.png)"></div>
-                                        <h5 class="reviews__name">Ростислав</h5>
-                                    </div>
-                                    <div class="reviews__content">
-                                        <div class="reviews__header">
-                                            <p class="reviews__date">18 фев 2020</p>
-                                        </div>
-                                        <div class="reviews__body">
-                                            <p>Изолят бомба, взял 2 вкуса, натуральный шоколад и брауни, оба вкуснотища, мешаю с водой, с молоком вообще сказка 0,5%, вкуснотища, мешаю с водой, с молоком вообще сказ ом вообще сказ</p>
-                                        </div>
-                                        <div class="reviews__footer">
-                                            <button class="reviews__icons">
-                                                <span class="icon-like-finger"></span>
-                                                <span class="number">1</span>
-                                            </button>
-                                            <p class="reviews__icons">
-                                                <span class="icon-message"></span>
-                                                <span class="number">1</span>
-                                            </p>
-                                            <a href="#" class="reviews__callback">
-                                                <span>Ответить</span>
-                                                <span class="icon-message"></span>
-                                            </a>
-                                            <button class="item__more js-more">
-                                                <span>читать далее</span>
-                                                <span class="icon-more-arrow"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="reviews__list">
-                                    <li class="reviews__item">
-                                        <div class="reviews-item__wrapper">
-                                            <div class="reviews__info">
-                                                <div class="reviews__photo" style="background-image: url(./img/reviews-photo.png)"></div>
-                                                <h5 class="reviews__name">Ростислав</h5>
-                                            </div>
-                                            <div class="reviews__content">
-                                                <div class="reviews__header">
-                                                    <p class="reviews__date">18 фев 2020</p>
-                                                </div>
-                                                <div class="reviews__body">
-                                                    <p>Изолят бомба, взял 2 вкуса, натуральный шоколад и брауни, оба вкуснотища, мешаю с водой, с молоком вообще сказка 0,5%, вкуснотища, мешаю с водой, с молоком вообще сказ ом вообще сказ</p>
-                                                </div>
-                                                <div class="reviews__footer">
-                                                    <button class="reviews__icons">
-                                                        <span class="icon-like-finger"></span>
-                                                        <span class="number">1</span>
-                                                    </button>
-                                                    <p class="reviews__icons">
-                                                        <span class="icon-message"></span>
-                                                        <span class="number">1</span>
-                                                    </p>
-                                                    <a href="#" class="reviews__callback">
-                                                        <span>Ответить</span>
-                                                        <span class="icon-message"></span>
-                                                    </a>
-                                                    <button class="item__more js-more">
-                                                        <span>читать далее</span>
-                                                        <span class="icon-more-arrow"></span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="reviews__item">
-                                <div class="reviews-item__wrapper">
-                                    <div class="reviews__info">
-                                        <div class="reviews__photo" style="background-image: url(./img/reviews-photo.png)"></div>
-                                        <h5 class="reviews__name">Ростислав</h5>
-                                    </div>
-                                    <div class="reviews__content">
-                                        <div class="reviews__header">
-                                            <p class="reviews__date">18 фев 2020</p>
-                                        </div>
-                                        <div class="reviews__body">
-                                            <p>Изолят бомба, взял 2 вкуса, натуральный шоколад и брауни, оба вкуснотища, мешаю с водой, с молоком вообще сказка 0,5%, вкуснотища, мешаю с водой, с молоком вообще сказ ом вообще сказ</p>
-                                        </div>
-                                        <div class="reviews__footer">
-                                            <button class="reviews__icons">
-                                                <span class="icon-like-finger"></span>
-                                                <span class="number">1</span>
-                                            </button>
-                                            <p class="reviews__icons">
-                                                <span class="icon-message"></span>
-                                                <span class="number">1</span>
-                                            </p>
-                                            <a href="#" class="reviews__callback">
-                                                <span>Ответить</span>
-                                                <span class="icon-message"></span>
-                                            </a>
-                                            <button class="item__more js-more">
-                                                <span>читать далее</span>
-                                                <span class="icon-more-arrow"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="reviews__list">
-                                    <li class="reviews__item">
-                                        <div class="reviews-item__wrapper">
-                                            <div class="reviews__info">
-                                                <div class="reviews__photo" style="background-image: url(./img/reviews-photo.png)"></div>
-                                                <h5 class="reviews__name">Ростислав</h5>
-                                            </div>
-                                            <div class="reviews__content">
-                                                <div class="reviews__header">
-                                                    <p class="reviews__date">18 фев 2020</p>
-                                                </div>
-                                                <div class="reviews__body">
-                                                    <p>Изолят бомба, взял 2 вкуса, натуральный шоколад и брауни, оба вкуснотища, мешаю с водой, с молоком вообще сказка 0,5%, вкуснотища, мешаю с водой, с молоком вообще сказ ом вообще сказ</p>
-                                                </div>
-                                                <div class="reviews__footer">
-                                                    <button class="reviews__icons">
-                                                        <span class="icon-like-finger"></span>
-                                                        <span class="number">1</span>
-                                                    </button>
-                                                    <p class="reviews__icons">
-                                                        <span class="icon-message"></span>
-                                                        <span class="number">1</span>
-                                                    </p>
-                                                    <a href="#" class="reviews__callback">
-                                                        <span>Ответить</span>
-                                                        <span class="icon-message"></span>
-                                                    </a>
-                                                    <button class="item__more js-more">
-                                                        <span>читать далее</span>
-                                                        <span class="icon-more-arrow"></span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    </li>
+                </ul>
+                <div class="checkout__general-price checkout__general-price-delivery">
+                    <p>Итого, без доставки:</p>
+                    <p class="general"><span>1000</span> грн</p>
                 </div>
-                <div class="general-popular">
-                    <h4 class="general-popular__caption">самые популярные</h4>
-                    <ul class="general-popular__list">
-                        <li class="general-popular__item">
-                            <div class="general-popular__img" style="background-image:url(./img/about-us-img-1.png)"></div>
-                            <div class="general-popular__info">
-                                <h5 class="popular__info__caption">
-                                    <a href="#">Что такое кератин?</a>
-                                </h5>
-                                <p class="general-popular__date">
-                                    <span class="decor" style="background-image:url(./img/data.svg)"></span>
-                                    <span>25 февраля</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="general-popular__item">
-                            <div class="general-popular__img" style="background-image:url(./img/about-us-img-2.png)"></div>
-                            <div class="general-popular__info">
-                                <h5 class="popular__info__caption">
-                                    <a href="#">Вегетарианский образ жизни</a>
-                                </h5>
-                                <p class="general-popular__date">
-                                    <span class="decor" style="background-image:url(./img/data.svg)"></span>
-                                    <span>25 февраля</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="general-popular__item">
-                            <div class="general-popular__img" style="background-image:url(./img/about-us-img-3.png)"></div>
-                            <div class="general-popular__info">
-                                <h5 class="popular__info__caption">
-                                    <a href="#">Что такое кератин?</a>
-                                </h5>
-                                <p class="general-popular__date">
-                                    <span class="decor" style="background-image:url(./img/data.svg)"></span>
-                                    <span>25 февраля</span>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <a href="#" class="main-button">оформить заказ</a>
             </div>
         </section>
-        <section class="popup popup-add-reviews">
+        <section class="popup popup-calc" data-target="calc">
             <button class="close__popup js-close">
                 <span class="icon-close"></span>
             </button>
-            <h3>Чтобы опубликовать комментарий, войдите на сайт</h3>
-            <span>Через</span>
-            <ul class="general-social__list">
-                <li class="general-social__item">
-                    <a href="#">
-                        <span class="icon-fb"></span>
-                    </a>
-                </li>
-                <li class="general-social__item">
-                    <a href="#">
-                        <span class="icon-google"></span>
-                    </a>
-                </li>
-                <li class="general-social__item">
-                    <a href="#">
-                        <span class="icon-twit"></span>
-                    </a>
-                </li>
-            </ul>
-            <span>или</span>
-            <a href="#" class="popup-enter__link">Войти в аккаунт</a>
+            <h5 class="popup-calc__name"></h5>
+            <div class="general-calc">
+                <button class="delete">–</button> 
+                <input type="number" class="calc-input" value="1">
+                <button class="add">+</button>
+            </div>
+            <button class="form-button disabled">пересчитать заказ</button>
         </section>
     </main>
     <footer class="footer">
