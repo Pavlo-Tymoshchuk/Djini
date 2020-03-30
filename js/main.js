@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.addEventListener('click', function(e){
         let elem = e.target;
         
-        if(!elem.closest('.js-name-category') && !elem.closest('.open__category') && !elem.closest('.header-mobile__nav') && !elem.closest(".js-button")) {
+        if(!elem.closest('.js-name-category') && !elem.closest('.open__category') && !elem.closest('.header-mobile__nav') && !elem.closest(".js-button") && !elem.closest(".popup")) {
             
             if(document.querySelector('.js-name-category')) {
                 document.querySelector('.js-name-category').classList.remove('active');
